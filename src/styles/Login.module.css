@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+body {
+  background: linear-gradient(to bottom, #625cdd, #30a2df);
+  color: black;
+  font-family: "Lexend", sans-serif;
+}
+
+.loginbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: 0;
+}
+.logoimg {
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.welcomeText {
+  transform: translateY(-10px);
+  animation: fadeIn 2.3s ease-in-out forwards;
+  text-align: center;
+  font-size: 36px;
+  margin-top: 50px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.border {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  width: 500px;
+  max-width: 85%;
+  height: auto;
+  max-height: 500px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transform: scale(1.014);
+}
+input {
+  background-color: lightgrey;
+  color: rgb(20, 20, 20);
+  border: 1px solid rgb(100, 100, 100);
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px;
+  max-width: 100%;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+button {
+  background: linear-gradient(to bottom, #4043e2, #4e97db);
+  border: 2.2px solid rgb(91, 14, 91);
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  max-width: 320px;
+}
+
+button:hover {
+  background-color: rgb(74, 103, 178);
+}
+
+@media (max-width: 768px) {
+  .border {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 160px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 98%;
+    transform: scale(1.014);
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}

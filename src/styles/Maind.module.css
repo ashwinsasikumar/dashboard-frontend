@@ -1,0 +1,264 @@
+.topcontainer {
+  background-color: rgba(231, 232, 223, 0.363);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  border-radius: 10px;
+}
+.clockalign {
+  margin-top: 10px;
+}
+.clock {
+  background-color: rgb(32, 167, 32);
+  border-radius: 5px;
+  width: 70px;
+  min-width: auto;
+  height: 60px;
+}
+.notify {
+  height: 40px;
+}
+.settings {
+  height: 40px;
+}
+.attendencecontent {
+  padding: 5px;
+  flex-direction: row;
+}
+
+.name {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+.button1 {
+  display: flex;
+  gap: 20px;
+}
+.search {
+  height: 40px;
+}
+.attendance {
+  background-color: rgba(231, 232, 223, 0.363);
+  color: black;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+  width: 514px;
+  min-width: auto;
+  height: 280px;
+  min-height: auto;
+}
+
+.attendanceRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.rpcontainer {
+  background-color: rgba(255, 255, 255, 0.795);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 140px;
+  max-width: auto;
+  height: 200px;
+  max-height: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.rpiconbox {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6px;
+  margin-top: 1px;
+  color: black;
+  font-size: 30px;
+}
+.rpcount {
+  margin-left: 26px;
+}
+.rp {
+  background-color: rgba(231, 232, 223, 0.363);
+  margin-left: 555px;
+  width: 160px;
+  max-width: auto;
+  padding: 10px;
+  height: 290px;
+  font-size: 14px;
+  border-radius: 10px;
+  margin-top: -310px;
+}
+.rplogo {
+  background-color: rgb(14, 124, 14);
+  width: 130px;
+  height: 80px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  color: rgb(224, 193, 17);
+}
+.attendanceItem {
+  background-color: rgba(255, 255, 255, 0.795);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 81px;
+  max-width: auto;
+  height: 200px;
+  max-height: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.barname {
+  margin-left: 10px;
+}
+.barchart {
+  background-color: rgba(231, 232, 223, 0.363);
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 667px;
+  min-width: auto;
+  min-height: auto;
+  height: 300px;
+  margin-left: 745px;
+  margin-top: -310px;
+}
+.contentcontainer {
+  background-color: rgba(231, 232, 223, 0.363);
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.iconBox {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .topcontainer {
+    flex-direction: column;
+    height: auto;
+    width: 402px;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .button1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 25px;
+  }
+
+  .attendance {
+    width: 382px;
+    height: 450px;
+  }
+
+  .attendanceRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .attendanceItem {
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .iconBox {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .attendanceItem p,
+  .attendanceItem h2 {
+    margin: 0;
+  }
+
+  .barchart {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .rp {
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .rpcontainer {
+    width: 340px;
+    height: 200px;
+    margin: auto;
+  }
+  .rpiconbox {
+    margin-left: 110px;
+  }
+}
+
+@media (max-width: 480px) {
+  .topcontainer {
+    padding: 5px;
+  }
+
+  .button1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .attendanceItem {
+    width: 320px;
+    height: 50px;
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    gap: 25px;
+  }
+  .clockalign {
+    margin-left: 7px;
+  }
+  .iconBox {
+    width: 50px;
+    height: 50px;
+  }
+
+  .barchart {
+    width: 402px;
+    height: auto;
+    padding: 5px;
+    margin-left: 0;
+  }
+  .rp {
+    width: 392px;
+    text-align: center;
+  }
+
+  .contentcontainer {
+    width: 402px;
+  }
+}
